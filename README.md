@@ -8,16 +8,23 @@ in the order they are present in the article.
 
 ## How it works
 The utility currently works by receiving a CSV of links and
-HTML-scraping each one; coupled with a regular expression
-to retrieve the categories themselves, it is a very fragile
+HTML-scraping each one, coupled with a regular expression
+to retrieve the categories themselves.
+
+, it is a very fragile
 creature indeed.
 
 ## Caveats
-Apart from being fragile and prone to break, this utility is
-also server-resources unfriendly and slow; do not run it on a
-wiki you do not own or have been given permission to do so.
-Some may even block you as an attacker, as you will be hitting
-the server thousands of time in succession.
+
+- Because of the HTML-scraping and RegExp, this utility is a
+  very fragile creature indeed. It might fail under skins
+  other than Vector or several MediaWiki versions.
+
+- Apart from being fragile and prone to break, this utility is
+  also server-resources unfriendly and slow; do not run it on a
+  wiki you do not own or have been given permission to do so.
+  Some may even block you as an attacker, as you will be hitting
+  the server thousands of time in succession.
 
 ## How to use
 
